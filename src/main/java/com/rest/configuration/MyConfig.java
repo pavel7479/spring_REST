@@ -30,7 +30,7 @@ public class MyConfig {
             dataSource.setUser("bestuser");
             dataSource.setPassword("bestuser");
         } catch (PropertyVetoException e) {
-       //     System.out.println("Exception connection with SQL");
+            System.out.println("Exception connection with SQL");
             throw new RuntimeException(e);
         }
         return dataSource;
