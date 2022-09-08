@@ -3,10 +3,11 @@ package com.rest.service;
 import com.rest.dao.EmployeeDao;
 import com.rest.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
-
+@Service
 public class EmployeeServiceImplementation implements EmployeeService {
     @Autowired
     private EmployeeDao employeeDAO;
