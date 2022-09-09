@@ -30,16 +30,23 @@ public class MyRestController {
         }
         return employee;
     }
-    @ExceptionHandler
-    public ResponseEntity<EmployeeIncorrectData> handlerException(NoSuchEmployeeException exception) {
-        EmployeeIncorrectData incorrectData = new EmployeeIncorrectData();
-        incorrectData.setInfo(exception.getMessage());
-        return new ResponseEntity<>(incorrectData, HttpStatus.NOT_FOUND);
+    @PostMapping("/employees")
+    public Employee addNewEmployee(@RequestBody Employee employee) {
+        employeeService.saveEmployee(employee);
+        return employee;
     }
-    @ExceptionHandler
-    public ResponseEntity<EmployeeIncorrectData> handlerException(Exception exception) {
-        EmployeeIncorrectData incorrectData = new EmployeeIncorrectData();
-        incorrectData.setInfo(exception.getMessage());
-        return new ResponseEntity<>(incorrectData, HttpStatus.BAD_REQUEST);
+    @PutMapping("/employees")
+    public Employee updateEmployee(@RequestBody Employee employee) {
+        employeeService.saveEmployee(employee);
+        return employee;
+    }
+    @DeleteMapping("/employees/{id}")
+    public String deleteEmployee(@PathVariable int id ) {
+        Employee employee = employeeService.getEmployee(id);
+        if (employee == null) {
+            throw new NoSuchEmployeeException("There is no employee with ID = " + id + " in database");
+        }
+        employeeService.deleteEmployee(id);
+        return "Employee has id = " + id + " was deleted";
     }
 }

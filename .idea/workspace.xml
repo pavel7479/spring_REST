@@ -10,10 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cf889d1-aeef-4cb2-b6d0-ce015d869691" name="Changes" comment="rest connect bd">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/exseption_handling/EmployeeIncorrectData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/exseption_handling/NoSuchEmployeeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/exseption_handling/EmployeeGlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/configuration/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/configuration/MyConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/controller/MyRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/controller/MyRestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +161,9 @@
       <workItem from="1662577078813" duration="3785000" />
       <workItem from="1662581377836" duration="2359000" />
       <workItem from="1662654121592" duration="3279000" />
-      <workItem from="1662660016107" duration="6443000" />
+      <workItem from="1662660016107" duration="6712000" />
+      <workItem from="1662732869381" duration="7439000" />
+      <workItem from="1662747972529" duration="1781000" />
     </task>
     <task id="LOCAL-00001" summary="rest">
       <created>1662580813514</created>
@@ -179,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662661992039</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="rest connect bd">
+      <created>1662670062002</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662670062002</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
